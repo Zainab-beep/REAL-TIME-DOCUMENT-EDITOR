@@ -9,11 +9,12 @@ DOMAIN: FULL STACK WEB DEVELOPMENT
 DURATION: 4 WEEKS
 
 MENTOR: NEELA SANTOSH
+
 This is a full-stack real-time collaborative document editing web application, similar to Google Docs. It enables multiple users to work on the same document simultaneously with changes reflected in real-time. 
 The project is built with React.js on the frontend and Flask (with Flask-SocketIO) on the backend.
 MongoDB is used to persist document data.
 
- Features
+ Features:
 Real-time document editing using WebSockets
 Multiple users can collaborate on a single document
 Document content saved periodically to MongoDB
@@ -69,7 +70,7 @@ npm install
 npm start
 The frontend will be running at http://localhost:3000 and will communicate with the Flask backend on port 5000.
 
- How It Works
+ How It Works:
 When a user navigates to a document URL (/document/:id), the frontend emits a get-document event.
 The backend checks if the document exists. If not, it creates a new one.
 As the user types, changes are broadcast to other users in the same room via send-changes events.
