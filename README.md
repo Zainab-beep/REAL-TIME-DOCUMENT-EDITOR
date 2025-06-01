@@ -74,3 +74,6 @@ When a user navigates to a document URL (/document/:id), the frontend emits a ge
 The backend checks if the document exists. If not, it creates a new one.
 As the user types, changes are broadcast to other users in the same room via send-changes events.
 Every few seconds or on manual trigger, the document is saved in MongoDB.
+
+OUTPUT
+![Image](https://github.com/user-attachments/assets/bd10d221-77d8-4615-9977-83ff52bae605)
